@@ -48,3 +48,10 @@ function miss_semicolon(){
 
 
 console.log(miss_semicolon());
+
+function foo1({name,age}){
+  console.log(name);
+  console.log(age);
+}
+
+foo1({name:"luxi",age:22});
