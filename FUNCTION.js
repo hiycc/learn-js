@@ -99,4 +99,50 @@ function string2int(str){
   return arr.reduce(((x,y)=>x*10+y));
 }
 
-console.log(string2int('123'));
+// console.log(string2int('123'));
+
+
+var arr = [1,2,3,4,4,4,6,6];
+var arr1 = arr.filter(function(value,index,arr){
+  return arr.indexOf(value) === index;
+});
+
+var set1 = new Set(arr);
+// console.log(arr1);
+// console.log(set1);
+
+// function add(){
+//   var balance = 10;
+//   return function abc(){
+//     balance+=1;
+//     console.log(balance);
+//   }
+// }
+
+// var y = add();
+// var x = add();
+// y();
+// y();
+// x();
+
+// var arr = [1,10,2,20];
+// arr.sort((x, y) => {
+//     if(x>=y)
+//       return 1;
+//     else return -1;
+// });
+// console.log(arr); // [1, 2, 10, 20]
+
+var arr = {
+  0:'xiaohong',
+  1:'abc',
+  2:'xiaoming',
+  length:3
+}
+console.log(arr);
+arr = Array.from(arr);
+arr.sort()
+console.log(arr);
+
+// console.log(arr[0]);
+// console.log(arr.length);
