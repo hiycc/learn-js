@@ -47,11 +47,56 @@ function miss_semicolon(){
 }
 
 
-console.log(miss_semicolon());
+// console.log(miss_semicolon());
 
 function foo1({name,age}){
   console.log(name);
   console.log(age);
 }
+// var arr = ['A', 'B', 'C'];
+// var r = arr.filter(function (element, index, self) {
+//     console.log(element); // 依次打印'A', 'B', 'C'
+//     console.log(index); // 依次打印0, 1, 2
+//     console.log(self); // self就是变量arr
+//     return true;
+// });
 
-foo1({name:"luxi",age:22});
+// foo1({name:"luxi",age:22});
+
+// var arr = [1,2,3,4,5]
+// var pow2_arr = arr.map(function(x){
+//   return x*x;
+// });
+// var fn = x => x * x;
+// var pow2_arr = arr.map((x=>x*x));
+// console.log(pow2_arr);
+// console.log(fn(2));
+
+function getAge(){
+  var y = new Date().getFullYear();
+  return y - this.birth;
+}
+var window = {};
+var xiaoming = {
+  name : '小明',
+  birth : 1990,
+  age : getAge,
+};
+// window.birth = 2020;
+// // xiaoming.age();
+// console.log(xiaoming.age());//31
+// console.log(xiaoming.age.apply(window,[]));
+
+// var arr = [1,2,3,4,5]
+// arr = arr.reduce(((x,y)=>x*y));
+// console.log(arr);
+
+function string2int(str){
+  var arr = [];
+  for(let i=0;i<str.length;i++){
+    arr.push(str.charAt(i)-0);
+  }
+  return arr.reduce(((x,y)=>x*10+y));
+}
+
+console.log(string2int('123'));
