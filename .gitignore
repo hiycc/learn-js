@@ -1,2 +1,4 @@
 .DS_Store
 ex/hello-koa/node_modules
+learn-ws/node_modules
+learn-koa/node_modules
