@@ -6,3 +6,5 @@ koa-2/node_modules
 use-nunjucks/node_modules
 view-koa/node_modules
 hello-sequelize/node_modules
+hello-test/node_modules
+async-test/node_modules
